@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  gap: 24px;
+}
+.embla__slide {
+  flex: 0 0 33%;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .embla__slide {
+    flex: 0 0 75%;
+    min-width: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "BPG Nino Mtavruli Bold";
+  src: url(/bpg_nino_mtavruli_bold.ttf);
+}
+
+body {
+  font-family: "BPG Nino Mtavruli Bold";
+}
